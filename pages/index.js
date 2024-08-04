@@ -4,11 +4,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>สวัสดีครับฟู่ววววววว</title>
+        <title>ไงเพื่อน</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <main style={styles.main}>
-        <h1 style={styles.heading}>สวัสดีครับฟู่ววววววว</h1>
+        <h1 style={styles.heading}>ไงเพื่อน</h1>
       </main>
     </>
   );
