@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>สวัสดีครับ</title>
+        <title>สวัสดีครับฟู่ววววววว</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <main style={styles.main}>
