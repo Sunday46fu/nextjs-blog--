@@ -1,26 +1,8 @@
 // pages/index.js
 import Head from 'next/head';
-import { useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
-  useEffect(() => {
-    // Add hover effect for button
-    const button = document.querySelector('button');
-    button.addEventListener('mouseover', () => {
-      button.style.backgroundColor = 'rgba(255,94,247,0.8)';
-      button.style.transform = 'scale(1.05)';
-    });
-    button.addEventListener('mouseout', () => {
-      button.style.backgroundColor = '#100720';
-      button.style.transform = 'none';
-    });
-
-    return () => {
-      button.removeEventListener('mouseover', () => {});
-      button.removeEventListener('mouseout', () => {});
-    };
-  }, []);
-
   return (
     <>
       <Head>
@@ -68,7 +50,9 @@ export default function Home() {
           }
         `}</style>
       </Head>
-      <button>Get Start</button>
+      <Link href="/newpage">
+        <button>Get Start</button>
+      </Link>
     </>
   );
 }
