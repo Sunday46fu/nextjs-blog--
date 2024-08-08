@@ -18,11 +18,11 @@ export default function NewPage() {
     setAttempts(attempts + 1);
 
     if (numberGuess < targetNumber) {
-      setMessage('Higher! Try again.');
+      setMessage('มากกว่า! ลองอีกครั้ง.');
     } else if (numberGuess > targetNumber) {
-      setMessage('Lower! Try again.');
+      setMessage('น้อยกว่า! ลองอีกครั้ง.');
     } else {
-      setMessage(`Congratulations! You guessed it in ${attempts + 1} attempts.`);
+      setMessage(`ขอแสดงความยินดี! คุณทายเลขถูกต้องใน ${attempts + 1} ครั้ง.`);
       setTargetNumber(generateRandomNumber());
       setAttempts(0);
     }
@@ -33,12 +33,12 @@ export default function NewPage() {
   return (
     <>
       <Head>
-        <title>Guess the Number Game</title>
+        <title>เกมทายเลข</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <main style={styles.main}>
-        <h1 style={styles.heading}>Guess the Number Game!</h1>
-        <p>Guess a number between 1 and 100:</p>
+        <h1 style={styles.heading}>เกมทายเลข!</h1>
+        <p>ทายหมายเลขระหว่าง 1 ถึง 100:</p>
         <input
           style={styles.input}
           type="number"
@@ -46,11 +46,11 @@ export default function NewPage() {
           onChange={(e) => setGuess(e.target.value)}
         />
         <button style={styles.button} onClick={handleGuess}>
-          Guess
+          ทาย
         </button>
         {message && <p style={styles.message}>{message}</p>}
         <Link href="/" passHref>
-          <button style={styles.homeButton}>Go to Home Page</button>
+          <button style={styles.homeButton}>กลับไปที่หน้าแรก</button>
         </Link>
       </main>
     </>
@@ -105,3 +105,6 @@ const styles = {
     cursor: 'pointer',
   },
 };
+
+ 
+
