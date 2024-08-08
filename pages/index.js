@@ -50,7 +50,7 @@ export default function Home() {
           }
         `}</style>
       </Head>
-      <Link href="/newpage">
+      <Link href="/c2">
         <button>Get Start</button>
       </Link>
     </>
